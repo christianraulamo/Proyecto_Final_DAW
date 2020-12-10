@@ -1,0 +1,60 @@
+{% extends "plantillaBase.php.twig" %}
+
+{% block cabecera %}{% endblock %}
+
+
+{% block contenido %}
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-sd-12 mx-auto">
+				<img src="imagenes/logo.png"/>
+			</div>
+		</div><br>
+		<form action="/AmoRecetas/index.php" method="get">
+			<h2 class="form-signin-heading text-center">Login</h2>
+			{% if inicio == "false" %}
+
+				<div class="row">
+					<div class="col-sd-12 mx-auto text-danger">Logueao incorrecto</div>
+				</div><br>
+			{% endif %}
+
+			<input type="hidden" name="con" value="login"/>
+			<input type="hidden" name="ope" value="entrar"/>
+
+			<div class="row mt-5 form-group">
+				<div
+					class="col-md-12">
+					<!--<input class="form-control w-25 mx-auto" type="text" value="ejemplo@gmail.com" name="email" placeholder="ejemplo@gmail.com" required autofocus/> -->
+					<input class="form-control w-25 mx-auto" type="text" value="prueba@gmail.com" name="email" placeholder="ejemplo@gmail.com" required autofocus/>
+				</div>
+			</div>
+
+			<!-- contraseña -->
+			<div class="row form-group">
+				<div
+					class="col-md-12">
+					<!--<input class="form-control w-25 mx-auto" type="password" value="ejemplo" name="pass" id="pass" placeholder="contraseña" required/>-->
+					<input class="form-control w-25 mx-auto" type="password" value="prueba" name="pass" id="pass" placeholder="contraseña" required/>
+				</div>
+			</div>
+
+			<div class="row form-group">
+				<div class="col-md-12 text-center">
+					<button class="btn btn-outline-success w-25" type="submit">Entrar</button>
+				</div>
+			</div>
+		</form>
+
+
+		<!-- acceso REGSISTRO -->
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<a href="index.php?ope=anadir&con=login" style="color:#27AE60">Registrar</a>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends "plantillaBase.php.twig" %}
+
+{% block titulo %}
+	<h1 class="mt-4">Añadir Series</h1>
+{% endblock %}
+
+{% block cabecera %}
+	<div class="container">
+		<br>
+
+		<div class="container-flex">
+			<div class="navbar navbar-expand-lg navbar-light bg-success">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+
+						<li class="nav-item active">
+							<a class="nav-link text-light" href="index.php?ope=listarAdmin&con=receta">Inicio</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link text-light" href="index.php?ope=anadir&con=receta">Añadir Recetas</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link text-light" href="index.php?ope=infoGlobal&con=api">API</a>
+						</li>
+						<li class="nav-item">
+							<a href="index.php?ope=listar&con=login" class="nav-link text-light">Salir</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+
+	{% block contenido %}
+
+		<form action="/AmoRecetas/index.php" method="get" enctype="multipart/form-data">
+			<input type="hidden" name="con" value="receta"/>
+			<input type="hidden" name="ope" value="modificar"/>
+
+				
+				<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="nomRec">Nombre de la Receta:</label>
+				<input class="form-control" value="{{ dat.IdRec }}" type="text" id="id" name="id" required/>
+
+			</div>
+			<div class=" row form-group">
+			<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="nomRec">Nombre de la Receta:</label>
+				<input class="form-control" value="{{ dat.NomRec }}" type="text" id="nomRec" name="nomRec" required/>
+
+			</div>
+			<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="Tiempo">Tiempo de preparación:
+				</label>
+				<input class="form-control" value="{{ dat.Tiempo }}" type="number" id="Tiempo" name="Tiempo" required/>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="Raciones">Raciones:</label>
+				<input class="form-control" value="{{ dat.Raciones }}" type="number" id="Raciones" name="Raciones" required/>
+			</div>
+
+			<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="Temporada">Temporada:</label>
+				<select class="form-control" name="Temporada" required>
+					<option value="{{ dat.Temporada }}">{{ dat.Temporada }}</option>
+					<option value="Verano">Verano</option>
+					<option value="Otoño">Otoño</option>
+					<option value="Invierno">Invierno</option>
+					<option value="Primavera">Primavera</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row form-group">
+
+			<div class="col-md-4 mx-auto">
+				<label class="col-form-label" for="IngredientePrincipal">Ingrediente Principal:</label>
+				<select class="form-control" name="IngredientePrincipal" id="IngredientePrincipal" required>
+					<option value="{{ dat.IngredientePrincipal }}">{{ dat.IngredientePrincipal }}</option>
+					{% for itemG in datG %}
+						<option value="{{ itemG.IdIngrediente }}">{{ itemG.IngredientePrincipal }}</option>
+					{% endfor %}
+					<option value="Otro">Otro</option>
+				</select>
+			</div>
+
+			<div class="col-md-4 mx-auto">
+				<label for="Posicion">Posicion:
+				</label>
+				<input class="form-control" value="{{ dat.Posicion }}" type="text" id="Posicion" name="Posicion" required/>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-4 mx-auto">
+				<label for="Clase">Clase:
+				</label>
+				<input class="form-control" value="{{ dat.Clase }}" type="text" id="Clase" name="Clase" required/>
+			</div>
+
+			<div class="col-md-4 mx-auto">
+				<label for="Tipo">Tipo:
+				</label>
+				<input class="form-control" value="{{ dat.Tipo }}" type="text" id="Tipo" name="Tipo" required/>
+			</div>
+		</div>
+
+
+		<div class="row form-group">
+			<div class="col-md-4 mx-auto">
+				<label for="Uso">Uso:
+				</label>
+				<input class="form-control" value="{{ dat.Uso }}" type="text" id="Uso" name="Uso" required/>
+			</div>
+
+			<div class="col-md-4 mx-auto">
+				<label for="Metodo">Metodo:
+				</label>
+				<input class="form-control" value="{{ dat.Metodo }}" type="text" id="Metodo" name="Metodo" required/>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-4 mx-auto">
+				<button class="btn btn-outline-success w-100" type="submit">Editar</button>
+			</div>
+		</div>
+	</form>
+{% endblock %}

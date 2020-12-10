@@ -1,0 +1,146 @@
+{% extends "plantillaBase.php.twig" %}
+
+{% block cabecera %}{% endblock %}
+
+{% block contenido %}
+
+	{% if error == 1 %}
+
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sd-12 mx-auto">
+					<img src="imagenes/logo.png"/>
+				</div>
+			</div><br>
+
+			<form action="/AmoRecetas/index.php" method="get">
+
+				<h2 class="form-signin-heading text-center">Registro</h2>
+				<input type="hidden" name="con" value="login"/>
+				<input type="hidden" name="ope" value="anadir"/>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<div class="col-sd-12 mx-auto text-danger">Las contraseñas no coinciden</div>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Correo">Correo electronico:</label>
+						<input class="form-control" type="email" name="Correo" id="Correo" value="{{ Correo }}" placeholder="ejemplo@gmail.com" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="NomUsu">Nombre:</label>
+						<input class="form-control" type="text" name="NomUsu" id="NomUsu" value="{{ NomUsu }}" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="ApeUsu">Apellidos:</label>
+						<input class="form-control" type="text" name="ApeUsu" id="ApeUsu" value="{{ ApeUsu }}" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Contraseña">Contraseña:</label>
+						<input class="form-control" type="password" name="Contraseña" id="Contraseña" value="{{ Contraseña }}" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Contraseña2">Confirmación contraseña:</label>
+						<input class="form-control" type="password" name="Contraseña2" id="Contraseña2" value="{{ Contraseña2 }}" required/>
+					</div>
+				</div>
+
+				<!-- registro -->
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<button class="btn btn-outline-success w-100" type="submit">Registrar</button>
+					</div>
+				</div>
+			</form>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="index.php?ope=listar&con=login" style="color:#27AE60">Volver Atrás</a>
+				</div>
+			</div>
+
+		</div>
+	{% else %}
+
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sd-12 mx-auto">
+					<img src="imagenes/logo.png"/>
+				</div>
+			</div><br>
+
+			<form action="/recetas/index.php" method="get">
+
+				<h2 class="form-signin-heading text-center">Registro</h2>
+				<input type="hidden" name="con" value="login"/>
+				<input type="hidden" name="ope" value="anadir"/>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Correo">Correo electronico:</label>
+						<input class="form-control" type="email" name="Correo" id="Correo" placeholder="ejemplo@gmail.com" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="NomUsu">Nombre:</label>
+						<input class="form-control" type="text" name="NomUsu" id="NomUsu" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="ApeUsu">Apellidos:</label>
+						<input class="form-control" type="text" name="ApeUsu" id="ApeUsu" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Contraseña">Contraseña:</label>
+						<input class="form-control" type="password" name="Contraseña" id="Contraseña" required/>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<label class="col-form-label" for="Contraseña2">Confirmación contraseña:</label>
+						<input class="form-control" type="password" name="Contraseña2" id="Contraseña2" required/>
+					</div>
+				</div>
+
+				<!-- registro -->
+				<div class="row form-group">
+					<div class="col-md-4 mx-auto">
+						<button class="btn btn-outline-success w-100" type="submit">Registrar</button>
+					</div>
+				</div>
+			</form>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="index.php?ope=listar&con=login" style="color:#27AE60">Volver Atrás</a>
+				</div>
+			</div>
+
+		</div>
+	{% endif %}
+{% endblock %}
