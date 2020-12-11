@@ -13,6 +13,9 @@
 ## Loguin
 <img src="Capturas/Loguin.PNG" width="200px">
 
+## info
+<img src="Capturas/info.png" width="200px">
+
 ## Inicio
 <img src="Capturas/Listado de recetas.PNG" width="400px">
 
