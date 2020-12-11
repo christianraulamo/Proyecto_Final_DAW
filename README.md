@@ -8,7 +8,7 @@
 
 
 ## Registro
-<img src="Capturas/registro.png" width="200px">
+<img src="Capturas/registro.PNG" width="200px">
 
 ## Loguin
 <img src="Capturas/Loguin.PNG" width="200px">
@@ -17,7 +17,7 @@
 <img src="Capturas/Listado de recetas.PNG" width="400px">
 
 ## información de la recetas
-<img src="Capturas/Inforecetas.PNG" width="200px">
+<img src="Capturas/Inforecetas.PNG" width="400px">
 
 ## registro de rectea
 <img src="Capturas/AñadirRecetas.PNG" width="400px">
