@@ -6,4 +6,9 @@
 |:-------------:|:------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
 <img src="Capturas/PHP.PNG" width="200px"> | <img src="Capturas/HTML.png" width="200px"> | <img src="Capturas/JS.png" width="200px"> | <img src="Capturas/MySql.PNG" width="200px"> | <img src="Capturas/CSS.png" width="200px"> | <img src="Capturas/TWIG.jpg" width="200px">
 
+
+## Registro
+<img src="Capturas/Registro.png" width="200px">
+
+## Loguin
 <img src="Capturas/Loguin.PNG" width="200px">
