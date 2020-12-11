@@ -20,6 +20,17 @@ class LoginController extends BaseController
         parent::__construct();
     }
 
+    /**
+     * redirect to the info
+     *
+     * @access public
+     */
+
+    public function ver()
+    {
+        echo $this->twig->render("infoAplicacion.php.twig");
+    }
+
 
     /**
      * redirect to the login

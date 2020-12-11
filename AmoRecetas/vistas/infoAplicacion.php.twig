@@ -1,0 +1,37 @@
+{% extends "plantillaBase.php.twig" %}
+
+{% block cabecera %}{% endblock %}
+
+
+{% block contenido %}
+
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-sd-12 mx-auto">
+				<img src="imagenes/logo.png"/>
+			</div>
+		</div><br>
+
+		<h1 class="form-signin-heading text-center">Info</h1>
+
+		<div class="row">
+			<div class="col-sd-12 mx-auto">
+				<h4>Esta pagina esta realizada para la explicación de la pagina web</h4>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-sd-12 mx-auto">
+				<img src="imagenes/listar.png" width="550px"/>
+				<img src="imagenes/info.png" width="550px"/>
+			</div>
+		</div><br>
+
+		<div class="row form-group">
+			<div class="col-md-12 text-center">
+				<a href="index.php?ope=listar&con=login" type="submit">Login</a>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

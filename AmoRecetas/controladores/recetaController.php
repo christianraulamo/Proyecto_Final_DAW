@@ -21,11 +21,7 @@ class RecetaController extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->sesion = Sesion::getInstance();
-        // check if there is an active session
-        if (!$this->sesion->checkActiveSession()) :
-            echo $this->twig->render("login.php.twig");
-        endif;
+        
     }
 
 
