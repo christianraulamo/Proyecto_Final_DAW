@@ -12,3 +12,15 @@
 
 ## Loguin
 <img src="Capturas/Loguin.PNG" width="200px">
+
+## Inicio
+<img src="Capturas/Listado de recetas.PNG" width="200px">
+
+## Loguin
+<img src="Capturas/Loguin.PNG" width="200px">
+
+## Loguin
+<img src="Capturas/Loguin.PNG" width="200px">
+
+## Loguin
+<img src="Capturas/Loguin.PNG" width="200px">
