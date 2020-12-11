@@ -17,10 +17,10 @@
 <img src="Capturas/Listado de recetas.PNG" width="400px">
 
 ## información de la recetas
-<img src="Capturas/inforeceta.PNG" width="200px">
+<img src="Capturas/inforecetas.PNG" width="200px">
 
 ## registro de rectea
-<img src="Capturas/AñadirRecetas.PNG" width="200px">
+<img src="Capturas/AñadirRecetas.PNG" width="400px">
 
 ## Editar receta
-<img src="Capturas/editar.PNG" width="200px">
+<img src="Capturas/editar.PNG" width="400px">
