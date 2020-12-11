@@ -14,13 +14,13 @@
 <img src="Capturas/Loguin.PNG" width="200px">
 
 ## Inicio
-<img src="Capturas/Listado de recetas.PNG" width="200px">
+<img src="Capturas/Listado de recetas.PNG" width="400px">
 
-## Loguin
-<img src="Capturas/Loguin.PNG" width="200px">
+## información de la recetas
+<img src="Capturas/inforeceta.PNG" width="200px">
 
-## Loguin
-<img src="Capturas/Loguin.PNG" width="200px">
+## registro de rectea
+<img src="Capturas/AñadirRecetas.PNG" width="200px">
 
-## Loguin
-<img src="Capturas/Loguin.PNG" width="200px">
+## Editar receta
+<img src="Capturas/editar.PNG" width="200px">
