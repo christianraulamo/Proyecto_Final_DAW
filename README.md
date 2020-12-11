@@ -14,7 +14,7 @@
 <img src="Capturas/Loguin.PNG" width="200px">
 
 ## info
-<img src="Capturas/info.PNG" width="200px">
+<img src="Capturas/info.PNG" width="400px">
 
 ## Inicio
 <img src="Capturas/Listado de recetas.PNG" width="400px">
