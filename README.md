@@ -10,7 +10,7 @@
 ## Registro
 <img src="Capturas/registro.PNG" width="200px">
 
-## Loguin
+## Login
 <img src="Capturas/Loguin.PNG" width="200px">
 
 ## info
